@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        @font-face {
+            font-family: 'DS-Digital Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+        }
+        .calsi-body{
+            background-color: rgb(82, 77, 77);
+            height: 400px;
+            width: 350px;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 20px;
+            padding-top: 45px;
+            
+        }
+        .clasi-calcultion{
+            background-color: greenyellow;
+            width: 300px;
+            height: 40px;
+            text-align: right;
+            font-size: 40px;
+            display: block;
+            margin: 0px auto;
+            padding: 10px;
+            margin-bottom: 45px;
+            font-family: "DS-Digital Normal";
+        }
+        .radish-button{
+            background-color: rgb(255, 140, 0);
+        }
+        .calsi-buttons{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            flex-wrap: wrap;
+            margin: 18px;
+        }
+        .buttons{
+            width: 60px;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            margin: 5px;
+            border-radius: 10px 10px 20px 20px;
+            border-style: none;
+        }
+        .buttons:hover{
+            border-radius: 10px 10px 20px 20px;
+            transition: 0.6s;
+            box-shadow: 0 0 5px 0 #fff;
+        }
+        .equals{
+            height: 80px;
+            background-color: red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calsi-body">
+        <input class="clasi-calcultion" placeholder="0"/>
+        <div class="calsi-buttons">
+            <button class="buttons radish-button">AC</button>
+            <button class="buttons">7</button>
+            <button class="buttons">4</button>
+            <button class="buttons">1</button>
+            <button class="buttons">0</button>
+
+            <button class="buttons radish-button">M+</button>
+            <button class="buttons">8</button>
+            <button class="buttons">5</button>
+            <button class="buttons">2</button>
+            <button class="buttons">.</button>
+
+            <button class="buttons radish-button">/</button>
+            <button class="buttons">9</button>
+            <button class="buttons">6</button>
+            <button class="buttons">3</button>
+            <button class="buttons">%</button>
+
+            <button class="buttons radish-button">x</button>
+            <button class="buttons radish-button">-</button>
+            <button class="buttons radish-button">+</button>
+            <button class="buttons equals">=</button>
+        </div>
+    </div>
+</body>
+</html>
